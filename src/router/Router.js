@@ -8,7 +8,7 @@ function Router() {
     <Routes>
       <Route path="/" element={<Navigate replace to="/lsystem" />} />
       <Route path="/lsystem" element={<Home />} />
-      <Route path="*" element={<Navigate replace to="/" />} />
+      {/* <Route path="*" element={<Navigate replace to="/" />} /> */}
     </Routes>
   );
 }
