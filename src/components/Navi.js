@@ -7,7 +7,7 @@ const appBarItems = [
   {
     id: 0,
     label: "L System",
-    route: "/lsystem",
+    route: "/",
   },
   { id: 1, label: "Other project", route: "/" },
 ];
