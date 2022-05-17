@@ -96,7 +96,7 @@ function Interface({
     animationIntervalID.current = setInterval(onTick, animationTickTime);
 
     console.log("set animation interval ID: ", animationIntervalID.current);
-  }, [animationSpeed, paths]);
+  }, [toReset, animationSpeed, paths]);  // eslint-disable-line react-hooks/exhaustive-deps
 
   // Instant Draw function
   const draw = useCallback(() => {

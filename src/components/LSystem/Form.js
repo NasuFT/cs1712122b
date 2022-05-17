@@ -168,9 +168,7 @@ function Form({
                 {system.name}
               </MenuItem>
             ))}
-            <MenuItem value="custom">
-              Custom
-            </MenuItem>
+            <MenuItem value="custom">Custom</MenuItem>
           </Select>
         </FormControl>
         <FormControl fullWidth margin="normal">
@@ -216,7 +214,7 @@ function Form({
               sx={{ mb: 2 }}
               onClick={handleInputButtonResetAnimation}
             >
-              Reset Animation (currently broken)
+              Reset Animation
             </Button>
           </FormControl>
         </Collapse>
