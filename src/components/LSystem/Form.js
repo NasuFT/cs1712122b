@@ -168,9 +168,7 @@ function Form({
                 {system.name}
               </MenuItem>
             ))}
-            <MenuItem value="custom">
-              Custom
-            </MenuItem>
+            <MenuItem value="custom">Custom</MenuItem>
           </Select>
         </FormControl>
         <FormControl fullWidth margin="normal">
