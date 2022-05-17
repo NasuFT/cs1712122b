@@ -214,7 +214,7 @@ function Form({
               sx={{ mb: 2 }}
               onClick={handleInputButtonResetAnimation}
             >
-              Reset Animation (currently broken)
+              Reset Animation
             </Button>
           </FormControl>
         </Collapse>
