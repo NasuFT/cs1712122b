@@ -28,13 +28,13 @@ export const L_SYSTEMS = [
   },
   {
     id: 3,
-    axiom: "F".split(""),
+    axiom: "FX".split(""),
     rules: [
-      ["F", "f+F+f".split("")],
-      ["f", "F-f-F".split("")],
+      ["X", "X+YF+".split("")],
+      ["Y", "-FX-Y".split("")],
     ],
-    angle: 60.0,
-    name: "Sierpinski Triangle",
+    angle: 90.0,
+    name: "Dragon Curve",
   },
   {
     id: 4,
@@ -52,6 +52,47 @@ export const L_SYSTEMS = [
     rules: [["F", "+F--F+".split("")]],
     angle: 45.0,
     name: "Levy C Curve",
+  },
+  {
+    id: 6,
+    axiom: "XF".split(""),
+    rules: [
+      ["X", "X+YF++YF-FX--FXFX-YF+".split("")],
+      ["Y", "-FX+YFYF++YF+FX--FX-Y".split("")],
+    ],
+    angle: 60.0,
+    name: "Gosper Curve",
+  },
+  {
+    id: 7,
+    axiom: "F+XF+F+XF".split(""),
+    rules: [["X", "XF-F+F-XF+F+XF-F+F-X".split("")]],
+    angle: 90.0,
+    name: "Sierpinski Square",
+  },
+  {
+    id: 8,
+    axiom: "YF".split(""),
+    rules: [
+      ["X", "YF+XF+Y".split("")],
+      ["Y", "XF-YF-X".split("")],
+    ],
+    angle: 60.0,
+    name: "Sierpinski Arrowhead",
+  },
+  {
+    id: 9,
+    axiom: "F+F+F+F".split(""),
+    rules: [["F", "FF+F+F+F+F+F-F".split("")]],
+    angle: 90.0,
+    name: "Shuriken",
+  },
+  {
+    id: 10,
+    axiom: "F+F+F+F".split(""),
+    rules: [["F", "FF+F+F+F+FF".split("")]],
+    angle: 90.0,
+    name: "Board",
   },
 ];
 
