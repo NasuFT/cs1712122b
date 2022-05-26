@@ -44,7 +44,7 @@ export const L_SYSTEMS = [
       ["Y", "-XF+YFY+FX-".split("")],
     ],
     angle: 90.0,
-    name: "Hilbert Curve,",
+    name: "Hilbert Curve",
   },
 ];
 
