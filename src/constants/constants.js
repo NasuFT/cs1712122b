@@ -46,6 +46,13 @@ export const L_SYSTEMS = [
     angle: 90.0,
     name: "Hilbert Curve",
   },
+  {
+    id: 5,
+    axiom: "F".split(""),
+    rules: [["F", "+F--F+".split("")]],
+    angle: 45.0,
+    name: "Levy C Curve",
+  },
 ];
 
 export const ANIMATION_SPEEDS = [
