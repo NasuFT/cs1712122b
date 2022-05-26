@@ -36,6 +36,16 @@ export const L_SYSTEMS = [
     angle: 60.0,
     name: "Sierpinski Triangle",
   },
+  {
+    id: 4,
+    axiom: "X".split(""),
+    rules: [
+      ["X", "+YF-XFX-FY+".split("")],
+      ["Y", "-XF+YFY+FX-".split("")],
+    ],
+    angle: 90.0,
+    name: "Hilbert Curve,",
+  },
 ];
 
 export const ANIMATION_SPEEDS = [
