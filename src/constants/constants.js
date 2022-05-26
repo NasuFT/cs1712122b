@@ -26,6 +26,16 @@ export const L_SYSTEMS = [
     angle: 90.0,
     name: "Koch Island",
   },
+  {
+    id: 3,
+    axiom: "F".split(""),
+    rules: [
+      ["F", "f+F+f".split("")],
+      ["f", "F-f-F".split("")],
+    ],
+    angle: 60.0,
+    name: "Sierpinski Triangle",
+  },
 ];
 
 export const ANIMATION_SPEEDS = [
