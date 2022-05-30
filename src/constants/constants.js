@@ -94,6 +94,37 @@ export const L_SYSTEMS = [
     angle: 90.0,
     name: "Board",
   },
+  {
+    id: 11,
+    axiom: "Y-Y+Y-Y".split(""),
+    rules: [
+      ["F", "FF".split("")],
+      ["X", "F-[[X]+X]+F[+F X]-X".split("")],
+      ["Y", "[++++X++++X++++X++++X]-[++++X++++X++++X++++X]-[++++X++++X++++X++++X]-[++++X++++X++++X++++X]-[++++X++++X++++X++++X]".split("")],
+    ],
+    angle: 22.5,
+    name: "Eye of Sauron",
+  },
+  {
+    id: 12,
+    axiom: "F+F+F+F".split(""),
+    rules: [
+      ["F", "F+f-FF+F+FF+Ff+FF-f+FF-F-FF-Ff-FFF".split("")],
+      ["f", "ffffff".split("")],
+    ],
+    angle: 90,
+    name: "Islands and Lakes",
+  },
+  {
+    id: 13,
+    axiom: "X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X".split(""),
+    rules: [
+      ["X", "[F-F-F-F[+++X+Y]-----F--------F+F+F+F]".split("")],
+      ["Y", "[F-F-F-F[+++Y]-----F--------F+F+F+F]".split("")],
+    ],
+    angle: 15,
+    name: "Circular Tile",
+  },
 ];
 
 export const ANIMATION_SPEEDS = [
