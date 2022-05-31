@@ -1,41 +1,27 @@
-import { AppBar, Box, Button, IconButton, Link, Toolbar } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  IconButton,
+  Link,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { createTheme } from "@mui/system";
+import { ThemeProvider } from "@emotion/react";
 
-const appBarItems = [
-  {
-    id: 0,
-    label: "L System",
-    route: "/lsystem",
+const customFont = createTheme({
+  typography: {
+    fontFamily: ["CS171CFDG", "sans-serif"].join(","),
   },
-  { id: 1, label: "Other project", route: "/" },
-];
+});
 
 function Navi() {
-  const navigate = useNavigate();
-
-  function handleClick(route) {
-    return () => {
-      navigate(route);
-    };
-  }
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {appBarItems.map((item) => (
-              <Button
-                key={item.id}
-                onClick={handleClick(item.route)}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {item.label}
-              </Button>
-            ))}
-          </Box>
           <Link
             rel="noopener noreferrer"
             target="_blank"
@@ -45,6 +31,13 @@ function Navi() {
               <GitHubIcon />
             </IconButton>
           </Link>
+          <Box sx={{ mx: 2, display: { xs: "none", md: "flex" } }}>
+            <ThemeProvider theme={customFont}>
+              <Typography className="font-cfdg" color="white" fontSize="2rem">
+                JOSH
+              </Typography>
+            </ThemeProvider>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>
