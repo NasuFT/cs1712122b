@@ -4,3 +4,12 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "CS171CFDG";
+  src: local("CS171CFDG"), url("./fonts/CS171Regular.otf") format("opentype");
+}
+
+.font-cfdg {
+  font-family: "CS171CFDG";
+}

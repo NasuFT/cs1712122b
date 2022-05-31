@@ -1,9 +1,10 @@
-import { Grid } from "@mui/material";
+import { Grid, Stack } from "@mui/material";
 import React, { useEffect, useReducer, useState } from "react";
 import { L_SYSTEMS } from "../../constants/constants";
 import { systemReducer } from "../../reducer";
 import Form from "./Form";
 import Interface from "./Interface";
+import Text from "./Text";
 
 function Home() {
   const [system, systemDispatch] = useReducer(systemReducer, L_SYSTEMS[0]);
@@ -33,14 +34,17 @@ function Home() {
         />
       </Grid>
       <Grid item xs={9}>
-        <Interface
-          iterations={iterations}
-          isAnimate={isAnimate}
-          system={system}
-          animationSpeed={animationSpeed}
-          toReset={toReset}
-          setToReset={setToReset}
-        />
+        <Stack spacing={2} sx={{ height: 800 }}>
+          <Text text={system.name} sx={{ height: 100 }} />
+          <Interface
+            iterations={iterations}
+            isAnimate={isAnimate}
+            system={system}
+            animationSpeed={animationSpeed}
+            toReset={toReset}
+            setToReset={setToReset}
+          />
+        </Stack>
       </Grid>
     </Grid>
   );

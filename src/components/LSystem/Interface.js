@@ -137,7 +137,7 @@ function Interface({
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
-      height="800"
+      height="100%"
       ref={svgElement}
     >
       <path ref={pathElement} fill="transparent" stroke="black"></path>
