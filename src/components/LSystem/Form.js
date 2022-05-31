@@ -227,6 +227,7 @@ function Form({
               label="Axiom"
               value={formAxiom}
               onChange={handleInputTextAxiom}
+              helperText='e.g. "F+f+F-F[FF]" (no spaces)'
             />
           </FormControl>
           <FormControl fullWidth margin="normal">
